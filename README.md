@@ -7,15 +7,19 @@
 
 <!-- /!\ do not modify above this line -->
 
-# Server Addons
+# Odoo Server Addons
 
-Server Addons for Odoo
+Odoo Server Addons
 
 <!-- /!\ do not modify below this line -->
 
 <!-- prettier-ignore-start -->
 
+[//]: # (addons)
 
+This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+
+[//]: # (end addons)
 
 <!-- prettier-ignore-end -->
 
