@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 - TODAY, Wesley Oliveira <wesley.oliveira@escodoo.com.br>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo noupdate="1">
+    <record id="rule_sale_order_block_technical_admin" model="ir.rule">
+        <field name="name">Block Sale Orders for Technical Admin</field>
+        <field name="model_id" ref="sale.model_sale_order" />
+        <field
+            name="groups"
+            eval="[(4, ref('technical_admin_limited.group_technical_admin_limited'))]"
+        />
+        <field name="domain_force">[('id', '=', False)]</field>
+        <field name="perm_read" eval="True" />
+        <field name="perm_write" eval="True" />
+        <field name="perm_create" eval="True" />
+        <field name="perm_unlink" eval="True" />
+    </record>
+
+    <record id="rule_sale_order_line_block_technical_admin" model="ir.rule">
+        <field name="name">Block Sale Order Lines for Technical Admin</field>
+        <field name="model_id" ref="sale.model_sale_order_line" />
+        <field
+            name="groups"
+            eval="[(4, ref('technical_admin_limited.group_technical_admin_limited'))]"
+        />
+        <field name="domain_force">[('id', '=', False)]</field>
+        <field name="perm_read" eval="True" />
+        <field name="perm_write" eval="True" />
+        <field name="perm_create" eval="True" />
+        <field name="perm_unlink" eval="True" />
+    </record>
+
+    <record id="rule_purchase_order_block_technical_admin" model="ir.rule">
+        <field name="name">Block Purchase Orders for Technical Admin</field>
+        <field name="model_id" ref="purchase.model_purchase_order" />
+        <field
+            name="groups"
+            eval="[(4, ref('technical_admin_limited.group_technical_admin_limited'))]"
+        />
+        <field name="domain_force">[('id', '=', False)]</field>
+        <field name="perm_read" eval="True" />
+        <field name="perm_write" eval="True" />
+        <field name="perm_create" eval="True" />
+        <field name="perm_unlink" eval="True" />
+    </record>
+
+    <record id="rule_purchase_order_line_block_technical_admin" model="ir.rule">
+        <field name="name">Block Purchase Order Lines for Technical Admin</field>
+        <field name="model_id" ref="purchase.model_purchase_order_line" />
+        <field
+            name="groups"
+            eval="[(4, ref('technical_admin_limited.group_technical_admin_limited'))]"
+        />
+        <field name="domain_force">[('id', '=', False)]</field>
+        <field name="perm_read" eval="True" />
+        <field name="perm_write" eval="True" />
+        <field name="perm_create" eval="True" />
+        <field name="perm_unlink" eval="True" />
+    </record>
+
+    <record id="rule_account_move_block_technical_admin" model="ir.rule">
+        <field name="name">Block Account Moves for Technical Admin</field>
+        <field name="model_id" ref="account.model_account_move" />
+        <field
+            name="groups"
+            eval="[(4, ref('technical_admin_limited.group_technical_admin_limited'))]"
+        />
+        <field name="domain_force">[('id', '=', False)]</field>
+        <field name="perm_read" eval="True" />
+        <field name="perm_write" eval="True" />
+        <field name="perm_create" eval="True" />
+        <field name="perm_unlink" eval="True" />
+    </record>
+
+    <record id="rule_account_move_line_block_technical_admin" model="ir.rule">
+        <field name="name">Block Account Move Lines for Technical Admin</field>
+        <field name="model_id" ref="account.model_account_move_line" />
+        <field
+            name="groups"
+            eval="[(4, ref('technical_admin_limited.group_technical_admin_limited'))]"
+        />
+        <field name="domain_force">[('id', '=', False)]</field>
+        <field name="perm_read" eval="True" />
+        <field name="perm_write" eval="True" />
+        <field name="perm_create" eval="True" />
+        <field name="perm_unlink" eval="True" />
+    </record>
+
+    <record id="rule_hr_employee_block_technical_admin" model="ir.rule">
+        <field name="name">Block Employees for Technical Admin</field>
+        <field name="model_id" ref="hr.model_hr_employee" />
+        <field
+            name="groups"
+            eval="[(4, ref('technical_admin_limited.group_technical_admin_limited'))]"
+        />
+        <field name="domain_force">[('id', '=', False)]</field>
+        <field name="perm_read" eval="True" />
+        <field name="perm_write" eval="True" />
+        <field name="perm_create" eval="True" />
+        <field name="perm_unlink" eval="True" />
+    </record>
+
+    <record id="rule_hr_contract_block_technical_admin" model="ir.rule">
+        <field name="name">Block Contracts for Technical Admin</field>
+        <field name="model_id" ref="hr_contract.model_hr_contract" />
+        <field
+            name="groups"
+            eval="[(4, ref('technical_admin_limited.group_technical_admin_limited'))]"
+        />
+        <field name="domain_force">[('id', '=', False)]</field>
+        <field name="perm_read" eval="True" />
+        <field name="perm_write" eval="True" />
+        <field name="perm_create" eval="True" />
+        <field name="perm_unlink" eval="True" />
+    </record>
+</odoo>
