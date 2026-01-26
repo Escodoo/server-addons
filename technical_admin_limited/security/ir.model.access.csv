@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ir_model_technical_admin_limited,ir.model access technical admin limited,base.model_ir_model,technical_admin_limited.group_technical_admin_limited,1,0,0,0
