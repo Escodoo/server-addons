@@ -1,0 +1,84 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* technical_admin_limited
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: technical_admin_limited
+#: model:res.groups,comment:technical_admin_limited.group_technical_admin_limited
+msgid ""
+"\n"
+"            Technical administrators with access to settings and technical menus,\n"
+"            but without access to business or sensitive company data.\n"
+"        "
+msgstr ""
+
+#. module: technical_admin_limited
+#: model:ir.model,name:technical_admin_limited.model_res_groups
+msgid "Access Groups"
+msgstr ""
+
+#. module: technical_admin_limited
+#: model:ir.model,name:technical_admin_limited.model_ir_rule
+msgid "Record Rule"
+msgstr ""
+
+#. module: technical_admin_limited
+#: model:ir.model,name:technical_admin_limited.model_ir_config_parameter
+msgid "System Parameter"
+msgstr ""
+
+#. module: technical_admin_limited
+#: model:res.groups,name:technical_admin_limited.group_technical_admin_limited
+msgid "Technical Administrator (Limited)"
+msgstr ""
+
+#. module: technical_admin_limited
+#: model:ir.model,name:technical_admin_limited.model_res_users
+msgid "User"
+msgstr ""
+
+#. module: technical_admin_limited
+#. odoo-python
+#: code:addons/technical_admin_limited/models/ir_config_parameter.py:0
+msgid ""
+"You are not allowed to access System Parameters.\n"
+"\n"
+"This action is restricted for Technical Administrators (Limited)."
+msgstr ""
+
+#. module: technical_admin_limited
+#. odoo-python
+#: code:addons/technical_admin_limited/models/res_groups.py:0
+msgid ""
+"You are not allowed to modify groups.\n"
+"\n"
+"This action is restricted for Technical Administrators (Limited)."
+msgstr ""
+
+#. module: technical_admin_limited
+#. odoo-python
+#: code:addons/technical_admin_limited/models/ir_rule.py:0
+msgid ""
+"You are not allowed to modify rules.\n"
+"\n"
+"This action is restricted for Technical Administrators (Limited)."
+msgstr ""
+
+#. module: technical_admin_limited
+#. odoo-python
+#: code:addons/technical_admin_limited/models/res_users.py:0
+msgid ""
+"You are not allowed to modify users.\n"
+"\n"
+"This action is restricted for Technical Administrators (Limited)."
+msgstr ""
