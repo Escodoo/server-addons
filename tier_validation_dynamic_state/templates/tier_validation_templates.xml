@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 - TODAY, Wesley Oliveira <wesley.oliveira@escodoo.com.br>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <template id="tier_validation_buttons_hide_request">
+        <div>
+            <field name="validation_status" invisible="1" />
+            <button
+                name="restart_validation"
+                string="Restart Validation"
+                invisible="not review_ids or hide_reviews"
+                type="object"
+            />
+        </div>
+    </template>
+</odoo>
