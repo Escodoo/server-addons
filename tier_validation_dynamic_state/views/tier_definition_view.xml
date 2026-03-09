@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 - TODAY, Wesley Oliveira <wesley.oliveira@escodoo.com.br>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="tier_definition_view_form_inherit" model="ir.ui.view">
+        <field name="name">tier.definition.form.inherit</field>
+        <field name="model">tier.definition</field>
+        <field name="inherit_id" ref="base_tier_validation.tier_definition_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='model_id']" position="after">
+                <field
+                    name="state_from"
+                    invisible="not model_id"
+                    widget="selection"
+                    domain="[('field_id.model_id', '=', model_id), ('field_id.name', '=', 'state')]"
+                    options="{'no_create': True, 'no_open': True}"
+                />
+                <field
+                    name="state_to"
+                    invisible="not model_id"
+                    widget="selection"
+                    domain="[('field_id.model_id', '=', model_id), ('field_id.name', '=', 'state')]"
+                    options="{'no_create': True, 'no_open': True}"
+                />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="tier_definition_view_tree_inherit" model="ir.ui.view">
+        <field name="name">tier.definition.list.inherit</field>
+        <field name="model">tier.definition</field>
+        <field name="inherit_id" ref="base_tier_validation.tier_definition_view_tree" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="state_from" />
+                <field name="state_to" />
+            </xpath>
+        </field>
+    </record>
+</odoo>
