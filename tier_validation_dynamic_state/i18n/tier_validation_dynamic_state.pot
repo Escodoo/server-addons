@@ -1,0 +1,46 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* tier_validation_dynamic_state
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: tier_validation_dynamic_state
+#: model_terms:ir.ui.view,arch_db:tier_validation_dynamic_state.tier_validation_buttons_hide_request
+msgid "Restart Validation"
+msgstr ""
+
+#. module: tier_validation_dynamic_state
+#: model:ir.model.fields,field_description:tier_validation_dynamic_state.field_tier_definition__state_from
+#: model:ir.model.fields,field_description:tier_validation_dynamic_state.field_tier_review__state_from
+msgid "State From"
+msgstr ""
+
+#. module: tier_validation_dynamic_state
+#: model:ir.model.fields,field_description:tier_validation_dynamic_state.field_tier_definition__state_to
+#: model:ir.model.fields,field_description:tier_validation_dynamic_state.field_tier_review__state_to
+msgid "State To"
+msgstr ""
+
+#. module: tier_validation_dynamic_state
+#: model:ir.model,name:tier_validation_dynamic_state.model_tier_definition
+msgid "Tier Definition"
+msgstr ""
+
+#. module: tier_validation_dynamic_state
+#: model:ir.model,name:tier_validation_dynamic_state.model_tier_review
+msgid "Tier Review"
+msgstr ""
+
+#. module: tier_validation_dynamic_state
+#: model:ir.model,name:tier_validation_dynamic_state.model_tier_validation
+msgid "Tier Validation (abstract)"
+msgstr ""
