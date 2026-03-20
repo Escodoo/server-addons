@@ -123,3 +123,12 @@ class TestTierValidationDynamicState(CommonTierValidation):
         vals = self.test_record._prepare_tier_review_vals(self.tier_def_1, 1)
         self.assertEqual(vals["state_from"], "draft")
         self.assertEqual(vals["state_to"], "confirmed")
+
+    def test_check_and_request_tier_no_definition(self):
+        record = self.test_record
+
+        res = record._check_and_request_tier("cancel")
+        self.assertFalse(res)
+
+        record.write({"state": "cancel"})
+        self.assertEqual(record.state, "cancel")
