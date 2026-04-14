@@ -134,8 +134,9 @@ class TierValidation(models.AbstractModel):
                 ],
             )
         )
+        valid_tiers = any([self.evaluate_tier(tier) for tier in tier_definitions])
 
-        if not tier_definitions:
+        if not valid_tiers:
             return False
 
         current_reviews = self.review_ids.filtered(
