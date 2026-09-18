@@ -1,0 +1,7 @@
+// Default backend brand color. Loaded first in web._assets_primary_variables so
+// the core !default assignments keep this value.
+// Rewritten from the system parameter web_theme_color.primary.
+$o-community-color: #71639e !default;
+$o-enterprise-color: #71639e !default;
+$o-brand-odoo: #71639e !default;
+$o-brand-primary: #71639e !default;

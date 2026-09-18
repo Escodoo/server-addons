@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 - TODAY, Escodoo
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo noupdate="1">
+    <record id="param_web_theme_color_primary" model="ir.config_parameter">
+        <field name="key">web_theme_color.primary</field>
+        <field name="value">#71639e</field>
+    </record>
+
+    <record id="param_web_theme_color_primary_dark" model="ir.config_parameter">
+        <field name="key">web_theme_color.primary_dark</field>
+        <field name="value">#71639e</field>
+    </record>
+</odoo>
